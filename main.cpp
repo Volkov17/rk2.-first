@@ -8,21 +8,17 @@ int main()
     cin >> n;
     int k=0;
     if (n>0) {
-        int arr[i];
+        int *arr= new int[i];
             for (int i = 0; i < n; i++) {
                 cin >> arr[i];
                 k++;
             }
-        if (k>n || k<n ) {
             for (int i = 0; i < n / 2; i++) {
                 swap(arr[i], arr[n - i - 1]);
             }
             for (int i = 0; i < n; i++) {
                 cout << arr[i] << " ";
             }
-        } else {
-            cout << "введите количесвто цифр,равное n" << endl;
-          }
     }
     else {
         cout << "error";
